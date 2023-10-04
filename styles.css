@@ -258,3 +258,89 @@ strong {
         padding-left: 1%;
         height: 88.5px;
     }}
+   
+   
+    @media (max-width: 430px) {
+        .first img {
+            align-items: center;
+            height: 23%;
+            width: 23%;
+            border: 4px solid #1c3e9c; 
+            border-radius: 100%;
+            margin: 0%;
+            margin-left: 5%; 
+            margin-right: 5%;
+            margin-top: 2%;
+        }
+        .containeres {
+            padding: 1%; /* Ajustez l'espacement pour les téléphones en mode portrait */
+            padding-top: 1%; /* Ajustez l'espacement pour les téléphones en mode portrait */
+        }
+    
+        h1 {
+            font-size: 160%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        }
+    
+        nav {
+            margin-top: 2% ;
+            display: flex;
+            height:65px; /* Ajustez la hauteur de la barre de navigation pour les téléphones en mode portrait */
+        }
+    
+        nav ul {
+            display: flex;
+    
+           margin: left 10%; /* Ajustez la marge pour les téléphones en mode portrait */
+        }
+    
+        nav ul li {
+            display: flex; /* Affichez les éléments de menu verticalement pour les téléphones en mode portrait */
+            margin: 0px; /* Ajustez la marge entre les éléments de menu pour les téléphones en mode portrait */
+            font-size: 100%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        }
+        li:hover>div {
+            background-color: rgb(120, 255, 248);
+            width: 0%;
+        }
+    
+        .container1 {
+            margin: 5% auto; /* Ajustez la marge pour les téléphones en mode portrait */
+            padding: 5%; /* Ajustez l'espacement pour les téléphones en mode portrait */
+            font-size: 150%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+            border-radius: 10px; /* Ajustez le rayon du bord pour les téléphones en mode portrait */
+        }
+    
+        h2 {
+            font-size: 130%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        }
+    
+        h3 {
+            font-size: 80%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        }
+    
+        ul p {
+            padding: 5% 13% 0% 0%; /* Ajustez l'espacement du texte pour les téléphones en mode portrait */
+            font-size: 40%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        }
+    
+        #menu button {
+            padding: 5px;
+            text-align: center;
+            font-size: 80%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        }
+        .menu_re{
+            transform: scale(0.5);
+            margin: right 100px;
+            padding: 0px;
+            height: 73px;
+            width: 70px;
+        }
+        .duo{
+            height: 73px;
+            width: 70px;
+            transform: scale(0.5);
+        }
+        #carré {
+            height: 71.5px;
+            width: 53px;
+        }}
