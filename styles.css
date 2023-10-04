@@ -183,3 +183,91 @@ li:hover>div {
 strong {
     color: #0099ff;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-color: #e0f3ff;
+        font-family: 'Abel', sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .first img  {
+        height: 15%; /* Ajustez la taille des images pour les téléphones */
+        width: 15%;
+        border: 4px solid #1c3e9c;
+        border-radius: 100%;
+        margin-right: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .containeres {
+        background-image: url("img/wp9164014-blue-white-4k-wallpapers.jpg");
+        padding: 2%; /* Ajustez l'espacement pour les téléphones */
+        padding-top: 20%; /* Ajustez l'espacement pour les téléphones */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    h1 {
+        font-size: 250%; /* Ajustez la taille de la police pour les téléphones */
+    }
+    
+    nav {
+        height: auto; /* Ajustez la hauteur de la barre de navigation pour les téléphones */
+        padding-bottom: 0%;
+    }
+    
+    nav ul {
+        margin-left: 0; /* Ajustez la marge pour les téléphones */
+    }
+    
+    nav ul li {
+        display: block; /* Affichez les éléments de menu verticalement pour les téléphones */
+        margin: 5px;
+        margin-bottom: 0px; /* Ajustez la marge entre les éléments de menu pour les téléphones */
+        font-size: 120%; /* Ajustez la taille de la police pour les téléphones */
+    }
+    
+    .container1 {
+        margin: 5% auto; /* Ajustez la marge pour les téléphones */
+        padding: 5%; /* Ajustez l'espacement pour les téléphones */
+        font-size: 200%; /* Ajustez la taille de la police pour les téléphones */
+        border-radius: 10px; /* Ajustez le rayon du bord pour les téléphones */
+    }
+    
+    h2 {
+        font-size: 200%; /* Ajustez la taille de la police pour les téléphones */
+    }
+    
+    h3 {
+        font-size: 150%; /* Ajustez la taille de la police pour les téléphones */
+    }
+    
+    ul p {
+        padding: 20px; /* Ajustez l'espacement du texte pour les téléphones */
+        font-size: 100%; /* Ajustez la taille de la police pour les téléphones */
+    }
+    
+    #menu button {
+        font-size: 120%; /* Ajustez la taille de la police pour les téléphones */
+    }
+    
+    .menu_re {
+        margin-right: 15px;
+        margin-left: 10px; /* Ajustez la marge entre les icônes pour les téléphones */
+    }
+    
+    .duo {
+        position: absolute; /* Supprimez la position absolue pour les téléphones */
+        margin: 0;
+    }
+    
+    #carré {
+        margin-left: 1%; /* Supprimez la marge pour les téléphones */
+    }}    
