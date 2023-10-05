@@ -9,20 +9,33 @@ body {
 }
 
 .first{
+    background-image: url("img/1wp9161888-blue-white-4k-wallpapers.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: end;
     align-items: center;
+}
+h1 {
+    transition: 1s;
+    color: #ffffff;
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+    font-size: 650%;
+    text-align: center;
 }
 
 .first img  {
     align-items: center;
-    height: 13%;
-    width: 13%;
-    border: 4px solid #1c3e9c; 
+    height: 15%;
+    width: 15%;
+    border: 2px solid #ffffff; 
     border-radius: 100%; 
     margin-right: 2%;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
 }
 
 .first img:hover {
@@ -34,40 +47,16 @@ body {
 header {
     padding-bottom: 0%;
 }
-
-
-.containeres {
-    background-image: url("img/wp9164014-blue-white-4k-wallpapers.jpg");
-    padding :5%;
-    padding-top: 30%;
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
-
-h1 {
-    transition: 1s;
-    color: #1c3e9c;
-    font-family: 'Kalam', cursive;
-    font-weight: 900;
-    font-size: 450%;
-    text-align: center;
-}
-
-h1:hover{
-    transition: 1s;
-    color: rgb(41, 30, 184);
-}
-
 nav {
-    background: linear-gradient(to bottom, #3d57a0, #b8ebff);
+    background: linear-gradient(to top, #b5a9ff,#013281);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px;
     height: 120px;
     width: 100%;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
 }
 
 nav ul {
@@ -86,42 +75,6 @@ nav ul li {
     padding-left: 0%;
 }
 
-.container1 {
-    max-width: 1400px;
-    text-align: center;
-    margin: 15% auto;
-    margin-top: 0%;
-    border: #4c98af 3px solid;
-    border-radius: 20px;
-    transition: transform 1s, background-color 0.8s, box-shadow 1s;
-    font-size: 350%;
-    background-color: #ffffffa6;
-}
-
-.container1:hover {
-    background-color: #ffffff;
-    box-shadow: 0px 0px 50px rgb(0, 110, 255);
-}
-
-h2 {
-    text-align: center;
-    color: #1c3e9c;
-}
-h3 {
-    color:#1e6ca0;
-    text-align: center;
-}
-ul p {
-    padding: 35px;
-    padding-right: 70px;
-    padding-top: 0px;
-    font-weight: 100;
-    font-family: 'Abel', sans-serif;
-    line-height: 1.3;
-    font-size: 25px;
-    text-align: justify;
-}
-
 #menu {
     margin-left: auto;
     transition: 0.8s;
@@ -133,7 +86,7 @@ ul p {
     background-color: transparent;
     transition: 1s;
     font-size: 150%;
-    color: white;
+    color: rgba(255, 255, 255, 0.767);
     padding: 5px;
     border: #004ec4 0px solid;
     border-radius: 5%;
@@ -142,8 +95,11 @@ ul p {
 
 #menu button:hover {
     font-weight: 300;
-    color: rgb(120, 255, 248);
     transition: 1s;
+    color: white;
+}
+li:hover>div {
+    width: 100%;
 }
 
 .menu_re {
@@ -167,6 +123,56 @@ ul p {
     height: 90px;
 }
 
+.containeres {
+    background-image: url("img/wp9164014-blue-white-4k-wallpapers.jpg");
+    padding :0%;
+    padding-top: 10%;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.container1 {
+    max-width: 90%;
+    text-align: center;
+    margin: 10% auto;
+    margin-top: 2%;
+    border: #3d57a0 2px solid;
+    transition: transform 1s, background-color 0.8s, box-shadow 1s;
+    font-size: 300%;
+    background-color: #ffffffb9;
+}
+
+.container1:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 110, 255, 0.363);
+}
+
+h2 {
+    text-align: center;
+    color: #1c3e9c;
+}
+h3 {
+    color:#1e6ca0;
+    text-align: center;
+    font-size: 150%;
+}
+p {
+    padding: 35px;
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    line-height: 1.4;
+    font-size: 90%;
+    text-align: center;
+}
+.cenfy {
+    text-align: justify;
+}
+
+
+
+
+
 
 .underline {
     transition: 1s;
@@ -175,10 +181,7 @@ ul p {
     width: 0%;
 }
 
-li:hover>div {
-    background-color: rgb(120, 255, 248);
-    width: 100%;
-}
+
 
 
 strong {
@@ -187,16 +190,19 @@ strong {
 
 @media (max-width: 767px) {
     .first img {
-        height: 15%;
-        width: 15%;
+        height: 25%;
+        width: 25%;
+    }
+    .first {
+        padding: 0%;
     }
     .containeres {
-        padding: 5%; /* Ajustez l'espacement pour les téléphones en mode portrait */
+        padding: 2%; /* Ajustez l'espacement pour les téléphones en mode portrait */
         padding-top: 1%; /* Ajustez l'espacement pour les téléphones en mode portrait */
     }
 
     h1 {
-        font-size: 250%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        font-size: 350%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
     }
 
     nav {
@@ -222,24 +228,12 @@ strong {
         width: 0%;
     }
 
-    .container1 {
-        margin: 5% auto; /* Ajustez la marge pour les téléphones en mode portrait */
-        padding: 5%; /* Ajustez l'espacement pour les téléphones en mode portrait */
-        font-size: 150%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
-        border-radius: 10px; /* Ajustez le rayon du bord pour les téléphones en mode portrait */
+    .container1 {/* Ajustez l'espacement pour les téléphones en mode portrait */
+        font-size: 150%; /* Ajustez la taille de la police pour les téléphones en mode portrait */ /* Ajustez le rayon du bord pour les téléphones en mode portrait */
     }
 
     h2 {
         font-size: 150%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
-    }
-
-    h3 {
-        font-size: 100%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
-    }
-
-    ul p {
-        padding: 5% 5% 2% 0%; /* Ajustez l'espacement du texte pour les téléphones en mode portrait */
-        font-size: 55%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
     }
 
     #menu button {
@@ -261,28 +255,23 @@ strong {
    
    
     @media (max-width: 430px) {
-        .first img {
-            align-items: center;
-            height: 23%;
-            width: 23%;
-            border: 4px solid #1c3e9c; 
-            border-radius: 100%;
-            margin: 0%;
-            margin-left: 5%; 
-            margin-right: 5%;
-            margin-top: 2%;
-        }
         .containeres {
             padding: 1%; /* Ajustez l'espacement pour les téléphones en mode portrait */
             padding-top: 1%; /* Ajustez l'espacement pour les téléphones en mode portrait */
         }
-    
+        .first img {
+            height: 35%;
+            width: 35%;
+        }
+        .first {
+            padding: 0%;
+        }
         h1 {
-            font-size: 160%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+            font-size: 200%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
         }
     
         nav {
-            margin-top: 2% ;
+            margin-top: 0% ;
             display: flex;
             height:65px; /* Ajustez la hauteur de la barre de navigation pour les téléphones en mode portrait */
         }
@@ -304,10 +293,7 @@ strong {
         }
     
         .container1 {
-            margin: 5% auto; /* Ajustez la marge pour les téléphones en mode portrait */
-            padding: 5%; /* Ajustez l'espacement pour les téléphones en mode portrait */
             font-size: 150%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
-            border-radius: 10px; /* Ajustez le rayon du bord pour les téléphones en mode portrait */
         }
     
         h2 {
@@ -315,13 +301,13 @@ strong {
         }
     
         h3 {
-            font-size: 80%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+            font-size: 130%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
         }
-    
-        ul p {
-            padding: 5% 13% 0% 0%; /* Ajustez l'espacement du texte pour les téléphones en mode portrait */
-            font-size: 40%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        p {
+            font-size: 70%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
         }
+        /* Ajustez l'espacement du texte pour les téléphones en mode portrait */
+/* Ajustez la taille de la police pour les téléphones en mode portrait */
     
         #menu button {
             padding: 5px;
