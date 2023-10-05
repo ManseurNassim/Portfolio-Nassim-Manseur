@@ -158,8 +158,14 @@ h3 {
     font-size: 150%;
 }
 p {
-    padding: 35px;
+    padding: 8%;
     font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    line-height: 1.4;
+    font-size: 90%;
+    text-align: center;
+}
+strong {
     font-family: 'Abel', sans-serif;
     line-height: 1.4;
     font-size: 90%;
