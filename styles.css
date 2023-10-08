@@ -286,6 +286,16 @@ footer h2{
         border: #ffffff00 2px solid;
     
     }
+    nav.retracte{
+        position: fixed;
+        top: 0;
+        background-color: #000000;
+        height: 6%;
+        width: 100%;
+        padding-bottom: 3%;
+        
+    
+}
 
     }
    
