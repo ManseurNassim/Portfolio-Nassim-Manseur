@@ -43,21 +43,27 @@ function maFonctionDeRetablissement() {
 //
 //
 //
+document.addEventListener("DOMContentLoaded", function () {
     const darkModeButton = document.getElementById('darkmode');
     let isDarkMode = false; // Initialisation à "Jour"
-
+    const containerElements = document.getElementsByClassName('container1');
     darkModeButton.addEventListener('click', () => {
         if (isDarkMode) {
             // Passer en mode "Jour"
-            darkModeButton.style.backgroundImage="url('img/darkmode.png')";
+            darkModeButton.style.backgroundImage = "url('img/darkmode.png')";
+            document.body.style.backgroundColor = '#c8c0fc'; // Couleur de fond du corps en mode jour
 
-            titre.style.color = '#000';
             isDarkMode = false;
         } else {
             // Passer en mode "Nuit"
-            darkModeButton.style.backgroundImage="url('img/lightmode.png')";
-            document.body.style.backgroundColor = '#013281'; 
-            document.querySelectorAll("p").style.color="#000";
             isDarkMode = true;
-        }
+            darkModeButton.style.backgroundImage = "url('img/lightmode.png')";
+            document.body.style.backgroundColor = '#38306b'; // Couleur de fond du corps en mode nuit
+            for (let i = 0; i < containerElements.length; i++) {
+                containerElements[i].style.color = '#c8c0fc'; // Remplacez par la couleur de votre choix
+            }
+
+        };
     });
+});
+

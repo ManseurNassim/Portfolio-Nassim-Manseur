@@ -1,5 +1,6 @@
 body {
-    background-color: #e0f3ff;
+    transition: 2s;
+    background-color:  #c8c0fc;
     font-family: 'Abel', sans-serif;
     height: 100%;
     width: 100%;
@@ -128,26 +129,7 @@ li:hover>div {
     transition: transform 5s ease-in-out;
   }
 
-.containeres .jour {
-    background-image: url("img/wp9164014-blue-white-4k-wallpapers.jpg");
-    padding :0%;
-    padding-top: 10%;
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    margin: 0%;
 
-}
-.containeres .nuit{
-    background-image: url("img/1wp9161888-blue-white-4k-wallpapers.jpg");
-    padding :0%;
-    padding-top: 10%;
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    margin: 0%;
-
-}
 
 .container1 {
     max-width: 90%;
@@ -158,11 +140,10 @@ li:hover>div {
     border: #3d57a0 2px solid;
     transition: transform 1s, background-color 0.8s, box-shadow 1s;
     font-size: 300%;
-    background-color: #ffffffb9;
+    background-color: #ffffff;
 }
 
 .container1:hover {
-    background-color: #ffffff;
     box-shadow: 0px 0px 50px rgba(0, 110, 255, 0.363);
 }
 
@@ -244,15 +225,18 @@ footer h2{
 
 
 @media (max-width: 767px) {
+
     #menu{
         margin: 2%;
         font-size: 90%
     }
     .first img {
-        height: 30%;
+        margin-top: 2%;
+        padding: 0%;
         width: 30%;
     }
     .first {
+        margin: 0%;
         padding: 0%;
     }
     .containeres {
@@ -261,7 +245,7 @@ footer h2{
     }
 
     h1 {
-        font-size: 350%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+        font-size: 300%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
     }
 
 
@@ -353,4 +337,14 @@ footer h2{
             border: #ffffff00 2px solid;
         
         }
+        #darkmode{
+            padding: 15px;
+            background-image: url("img/darkmode.png");
+            background-size: 85%;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 5%;
+            
+            
+            }
 }
