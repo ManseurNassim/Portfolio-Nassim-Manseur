@@ -58,9 +58,14 @@ nav.retracte{
     position: fixed;
     top: 0;
     background-color: #000000;
-    height: 5%;
+    height: 4%;
     width: 100%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
+    font-size: 100%;
+    text-align: center;
+    justify-content: space-around;
+    font-weight: 100;
+
     
 }
 
@@ -76,10 +81,12 @@ nav ul {
 nav ul li {
     font-size: 90%;
 }
+
 #darkmode{
+transition: 1s ease;
 padding: 15px;
 background-image: url("img/darkmode.png");
-background-size: 100%;
+background-size: 90%;
 background-position: center;
 background-repeat: no-repeat;
 margin-left: 5%;
@@ -127,7 +134,7 @@ li:hover>div {
 .smooth-scroll {
     scroll-behavior: smooth;
     transition: transform 5s ease-in-out;
-  }
+}
 
 
 
@@ -340,7 +347,7 @@ footer h2{
         #darkmode{
             padding: 15px;
             background-image: url("img/darkmode.png");
-            background-size: 85%;
+            background-size: 80%;
             background-position: center;
             background-repeat: no-repeat;
             margin-left: 5%;
