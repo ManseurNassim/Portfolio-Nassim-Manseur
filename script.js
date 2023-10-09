@@ -52,6 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // Passer en mode "Jour"
             darkModeButton.style.backgroundImage = "url('img/darkmode.png')";
             document.body.style.backgroundColor = '#c8c0fc'; // Couleur de fond du corps en mode jour
+            for (let i = 0; i < containerElements.length; i++) {
+                containerElements[i].style.backgroundColor = '#ffffff'; // Remplacez par la couleur de votre choix
+            }
 
             isDarkMode = false;
         } else {
@@ -60,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             darkModeButton.style.backgroundImage = "url('img/lightmode.png')";
             document.body.style.backgroundColor = '#38306b'; // Couleur de fond du corps en mode nuit
             for (let i = 0; i < containerElements.length; i++) {
-                containerElements[i].style.color = '#c8c0fc'; // Remplacez par la couleur de votre choix
+                containerElements[i].style.backgroundColor = '#a5a4a4'; // Remplacez par la couleur de votre choix
             }
 
         };
