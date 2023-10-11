@@ -1,6 +1,6 @@
 body {
     transition: 2s;
-    background-color:  #c8c0fc;
+    background-color:  #dfceff;
     font-family: 'Abel', sans-serif;
     height: 100%;
     width: 100%;
@@ -33,7 +33,7 @@ h1 {
     width: 20%;
     border: 0px solid #ffffff; 
     border-radius: 100%; 
-    margin-top: 8%;
+    margin-top: 3%;
 }
 
 .first img:hover {
@@ -46,21 +46,21 @@ header {
     padding-bottom: 0%;
 }
 nav {
-    background: linear-gradient(to top, #b5a9ff, #013281);
+    background: linear-gradient(to top, #cba6ff, #013281);
     display: flex;
     align-items: center;
     justify-content: center; /* Ajoutez cette ligne pour centrer horizontalement */
     padding: 0;
-    height: 7%;
-    width: 100%;
+    height: 2%;
+    width: 110%;
 }
 nav.retracte{
     position: fixed;
     top: 0;
     background-color: #000000;
-    height: 4%;
-    width: 100%;
-    padding-bottom: 1%;
+    height: 2%;
+    width: 110%;
+    padding-bottom: 2%;
     font-size: 100%;
     text-align: center;
     justify-content: space-around;
@@ -79,17 +79,17 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 90%;
+    font-size:100%;
 }
 
 #darkmode{
+padding: 0%;
 transition: 1s ease;
-padding: 15px;
 background-image: url("img/darkmode.png");
-background-size: 90%;
+background-size: 60%;
 background-position: center;
 background-repeat: no-repeat;
-margin-left: 5%;
+margin-left: 20%;
 
 
 }
@@ -110,6 +110,7 @@ button{
 }
 
 #menu button {
+    margin-right: 50%;
     text-align: center;
     justify-content: space-around;
     font-weight: 100;
@@ -157,15 +158,22 @@ li:hover>div {
 h3 {
     color:#1e6ca0;
     text-align: center;
-    font-size: 150%;
+    font-size: 80%;
+}
+h4{
+    font-size: 60%;
+}
+a{
+    font-size: 100%;
 }
 p {
-    padding: 8%;
-    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom:2%;
     font-weight: 100;
     font-family: 'Abel', sans-serif;
-    line-height: 1.4;
-    font-size: 90%;
+    line-height: 1.2;
+    font-size: 60%;
     text-align: center;
 }
 strong {
@@ -177,8 +185,29 @@ strong {
 .cenfy {
     text-align: justify;
 }
+#Projets{
+    width: auto;
+    height: 1000%;
+    list-style: none;
+}
+.Projet img{
+    display: block; /* Évite l'espace sous l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+    height: 0%;
+    width: 50%;
+}
+.Projet{
+    border-radius: 1%;
+    transition: 0.4s;
+    margin: 5%;
 
+}
+.Projet:hover{
+    transition: 0.4s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px rgba(48, 10, 218, 0.808);
 
+}
 .underline {
     transition: 1s;
     height: 1px;
@@ -231,7 +260,11 @@ footer h2{
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 860px) {
+    #darkmode{
+        padding: 12px;
+        background-size: cover;
+    }
 
     #menu{
         margin: 2%;
@@ -260,8 +293,8 @@ footer h2{
         font-size: 150%; /* Ajustez la taille de la police pour les téléphones en mode portrait */ /* Ajustez le rayon du bord pour les téléphones en mode portrait */
     }
 
-    h2 {
-        font-size: 150%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+    h4 {
+        font-size: 60%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
     }
     nav ul{
         display: flex;
@@ -287,6 +320,9 @@ footer h2{
         
     
 }
+nav{
+    width: 100%;
+}
 
     }
    
@@ -308,23 +344,25 @@ footer h2{
         }
     
         .container1 {
-            font-size: 150%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+            font-size: 130%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
         }
     
         h2 {
-            font-size: 130%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+            font-size: 100%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
         }
     
         h3 {
-            font-size: 130%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+            font-size: 100%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
         }
         p {
-            font-size: 70%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
+            font-size: 60%; /* Ajustez la taille de la police pour les téléphones en mode portrait */
         }
-        a{
-            margin: 0%;
+        a{color: transparent;
+            margin: 0%;}
 
-
+        nav{
+            width: 100%;
+        }
         nav ul{
             display: flex;
             justify-content: center;
@@ -345,13 +383,16 @@ footer h2{
         
         }
         #darkmode{
-            padding: 15px;
+            padding: 12px;
             background-image: url("img/darkmode.png");
-            background-size: 80%;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             margin-left: 5%;
             
             
+            }
+            nav ul li {
+                font-size:90%;
             }
 }
