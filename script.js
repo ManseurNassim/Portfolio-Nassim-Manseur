@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const darkModeButton = document.getElementById('darkmode');
     let isDarkMode = false; // Initialisation à "Jour"
     const containerElements = document.getElementsByClassName('container1');
-    darkModeButton.addEventListener('click', () => {
+        darkModeButton.addEventListener('click', () => {
         if (isDarkMode) {
             // Passer en mode "Jour"
             darkModeButton.style.backgroundImage = "url('img/darkmode.png')";

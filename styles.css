@@ -71,9 +71,9 @@ nav.retracte {
     position: fixed;
     top: 0;
     background-color: #000000;
-    height: 2%;
+    height: 40px;
     width: 110%;
-    padding-bottom: 2%;
+    padding-bottom: 21px;
     font-size: 100%;
     text-align: center;
     justify-content: space-around;
@@ -169,7 +169,7 @@ p {
     font-weight: 100;
     font-family: 'Abel', sans-serif;
     line-height: 1.2;
-    font-size: 60%;
+    font-size: 45%;
     text-align: center;
 }
 
@@ -281,10 +281,16 @@ footer h2 {
     }
 
     .container1 {
-        font-size: 150%;
+        font-size: 180%;
+    }
+    h3{
+        font-size: 110%;
     }
 
     h4 {
+        font-size: 80%;
+    }
+    p{
         font-size: 60%;
     }
 
@@ -307,9 +313,9 @@ footer h2 {
         position: fixed;
         top: 0;
         background-color: #000000;
-        height: 4%;
+        height: 40px;
         width: 110%;
-        padding-bottom: 2%;
+        padding-bottom: 21px;
         font-size: 100%;
         text-align: center;
         justify-content: space-around;
@@ -370,9 +376,9 @@ footer h2 {
         position: fixed;
         top: 0;
         background-color: #000000;
-        height: 2%;
+        height: 20px;
         width: 100%;
-        padding-bottom: 5%;
+        padding-bottom: 20px;
         font-size: 100%;
         text-align: center;
         justify-content: space-around;
