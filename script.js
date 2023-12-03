@@ -24,6 +24,22 @@ var observer = new IntersectionObserver(function(entries, observer) {
     });
 }, options);
 
+
+
+function scrollToAnchor(anchorId) {
+    const targetElement = document.getElementById(anchorId);
+
+    if (targetElement) {
+        // Scroll jusqu'à l'élément cible
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',  // Ajuste la position en haut de la fenêtre
+            inline: 'end'
+        });
+    }
+}
+
+
 // Sélectionnez la barre de navigation par le nom de la balise "nav"
 var barreDeNavigation = document.querySelector("nav");
 var h1=document.querySelector("h1");
@@ -69,4 +85,5 @@ document.addEventListener("DOMContentLoaded", function () {
         };
     });
 });
+
 
