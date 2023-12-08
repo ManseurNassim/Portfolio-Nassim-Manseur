@@ -50,10 +50,14 @@ nav {
     background: linear-gradient(to top, #cba6ff, #013281);
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 0;
-    height: 2%;
-    width: 100%;
+    background-color: #000000;
+    width: 95%;
+    padding-left: 5%;
+    font-size: 100%;
+    text-align: center;
+    justify-content: space-around;
+    font-weight: 100;
 }
 
 nav ul {
@@ -72,8 +76,7 @@ nav.retracte {
     top: 0;
     background-color: #000000;
     height: 40px;
-    width: 110%;
-    padding-bottom: 21px;
+    padding-bottom: 23px;
     font-size: 100%;
     text-align: center;
     justify-content: space-around;
@@ -87,7 +90,7 @@ nav.retracte {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 button {
@@ -259,7 +262,7 @@ footer h2 {
         padding: 12px;
         background-size: cover;
     }
-
+    
     #menu {
         margin: 2%;
         font-size: 90%;
@@ -307,19 +310,6 @@ footer h2 {
         height: 30px;
         border-radius: 5%;
         border: #ffffff00 2px solid;
-    }
-
-    nav.retracte {
-        position: fixed;
-        top: 0;
-        background-color: #000000;
-        height: 40px;
-        width: 110%;
-        padding-bottom: 21px;
-        font-size: 100%;
-        text-align: center;
-        justify-content: space-around;
-        font-weight: 100;
     }
     
 }
