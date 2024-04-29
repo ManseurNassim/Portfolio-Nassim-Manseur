@@ -5,101 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Manseur Nassim</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" id="css-link">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Oswald&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="Accueil" >
-        <div class="first">
-            <img src="img/Nassim.jpg" alt="photo nassim">
-            <h1>NASSIM MANSEUR</h1>
+    <header>
+        <div id="Accueil">
+                <nav>
+                    <ul id="menu">
+                        <li><a href="#Accueil:1" onclick="scrollToAnchor('Accueil')"><button>Accueil</button></a><div class="underline"></div></li>
+                        <li><a href="#Parcours:1" onclick="scrollToAnchor('Parcours')"><button>Parcours</button></a><div class="underline"></div></li>
+                        <li><a href="#Projets:1" onclick="scrollToAnchor('Projets')"><button>Projets</button></a><div class="underline"></div></li>
+                        <li><a href="#Apropos:1" onclick="scrollToAnchor('Apropos')"><button>A&nbsp;propos</button></a><div class="underline"></div></li>
+                        <li><a href="#Contact:1" onclick="scrollToAnchor('Contact')"><button>Contact</button></a><div class="underline"></div></li>
+                        <li id="darkmode"></li>
+                        <li id="menuimg"><a href="#Accueil:1" onclick="scrollToAnchor('Accueil')"><img id="roquette"src="img/darkroquette.png" alt="bouton menu"></a></li>
+                    </ul>
+                </nav>
+                <div>
+                <img id="pp" src="img/Nassim.jpg" alt="photo nassim">
+                <br>
+                <br>
+                <h1 id="titre"> Je suis <span id="nom">Nassim </span>un étudiant et passionné de l'informatique !</h1>
+                <a href="CV_MANSEUR_NASSIM.pdf" download="CV_NassimManseur">
+                    <button id="download">Télécharger mon CV</button>
+                </a>
+                </div>
         </div>
-        <nav>
-            <ul id="menu">
-                <li><a href="#Accueil:1" onclick="scrollToAnchor('Accueil')" ><button>Accueil</button></a><div class="underline"></div></li>
-                <li><a href="#Projets:1" onclick="scrollToAnchor('Projets')"><button>Projets</button></a><div class="underline"></div></li>
-                <li><a href="#Présentation:1" onclick="scrollToAnchor('Présentation')"><button>A&nbsp;propos</button></a><div class="underline"></div></li>
-                <li><a href="#Contact:1" onclick="scrollToAnchor('Contact')"><button>Contact</button></a><div class="underline"></div></li>
-               <li id="darkmode"></li>
-
-            </ul>
-               
-
-        </nav>
     </header>
-    <div class="containeres">
-
-        <div class="container1">
-            <h3>Qui suis-je ?</h3>
-            <p class="cenfy">Je suis <strong>Manseur Nassim</strong>, étudiant en informatique. Pour moi l'infortmatique est un moyen <strong>d'exprimer ma créativité et mon inventivité</strong>, passionné depuis très jeune j'espère pouvoir augmenter et partager mes compétences dans le domaine !</p>        
-            <br>
-        </div>
-
-        <div id="Projets" class="container1">
-            <p></p>
-            <h3>Portfolio</h3>
-                <h4>Voici quelques-uns de mes projets récents :</h4>
-                <div class="Projet">
-  
-                    <p>Ce projet simule la création d'un système de gestion des notes pour les étudiants en BUT en trois étapes: la modélisation des données, la création de procédures de visualisation des données dérivées, et l'établissement de règles d'accès pour divers utilisateurs, le but étant de gérer efficacement et en toute sécurité les données des notes des étudiants.<p>
-                    <img src="img/Sql.png.png">
-                    <a href="https://drive.google.com/drive/folders/11YkzDIl4AW6UbrdPMUvk2Yha6m5DFqFT?usp=sharing" target="_blank">SAE Création d'une base de donnée</a>
-                </div>
-                <br>
-                <div class="Projet">
-  
-                    <p>L'objectif de ce projet est d'analyser des communautés modélisées sous différentes formes en développant des fonctions informatiques en python. Dans le but d'utliser les données extraite pour obtenir des informations spécifiques.<p>
-                    <img src="img/développemnt_application.jpg">
-                    <a href="https://drive.google.com/drive/folders/1MDXS7eMLXGuMiOicLWfG3lNtV516V1aY?usp=sharing" target="_blank">SAE Développement Application</a>
-                </div>
-                <br>
-                <div class="Projet">
-  
-                    <p>Ce projet simule la création d'un système de gestion des notes pour les étudiants en BUT en trois étapes : la modélisation des données, la création de procédures de visualisation des données dérivées, et l'établissement de règles d'accès pour divers utilisateurs, le but étant de gérer efficacement et en toute sécurité les données des notes des étudiants.<p>
-                    <img src="img/Sql.png.png">
-                    <a href="https://drive.google.com/drive/folders/11YkzDIl4AW6UbrdPMUvk2Yha6m5DFqFT?usp=sharing" target="_blank">Création d'une base de donnée</a>
-                </div>
-                
-            <br>
-        </div>
+    <div id="Parcours" class="contenant">
+        <h1><span>Mon Parcours</span></h1>
+            
+            <!-- début timeline -->
+            <div class="Parcours">
+                <ul>
+                    <li>
+                        <h3 class="heading">Obtention du Baccalaureat Générale</h3>
+                        <p>Options : <span>Numérique et sciences informatique</span> & <span>Mathématique</span> avec <span>mention : bien</span> </p>
+                        <span class="date">2019-2022</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">1er année du BUT informatique</h3>
+                        <p>Début du cursus en <span>3 ans du BUT informatique.</span> A l'IUT de Villetaneuse a la Sorbonne Paris Nord</p>
+                        <span class="date">2022-2023</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">2éme année du BUT avec stage</h3>
+                        <p><span>Mise en application de notre apprentissage et de nos compétences </span> durant <span>un stage de 2 mois </span>chez NTI solutions</p>
+                        <span class="date">2023-2024</span>
+                        <span class="circle"></span>
+                    </li>
+                    <li>
+                        <h3 class="heading">3éme année du BUT informatique</h3>
+                        <p>3ème année du BUT informatique à venir,<br> <span>avec possibilité d'alternance</span></p>
+                        <span class="date">2024-2025</span>
+                        <span class="circle"></span>
+                    </li>
+                </ul>
+            </div>
+            <!-- fin timeline -->
+    </div>
+    <div id="Projets" class="contenant">
+        <h1><span>Mes projets</span></h1>
+        <div class="conteneur">
+            <div class="Projet">
+                <h2>Projet SAE SQL</h2>
+                <a href="https://drive.google.com/drive/folders/11YkzDIl4AW6UbrdPMUvk2Yha6m5DFqFT?usp=sharing" target="_blank">
+                <img src="img/BDDprojet.png" alt="Projet 1">
+              </a>
+            </div>
+            <div class="Projet">
+                <h2>Projet SAE PYTHON</h2>
+                <a href="https://drive.google.com/drive/folders/1MDXS7eMLXGuMiOicLWfG3lNtV516V1aY?usp=sharing" target="_blank">
+                <img src="img/pythonprojet.png" alt="Projet 2">
+              </a>
+            </div>
+            <div class="Projet">
+                <h2>Projet SAE PHP</h2>
+                <a href="https://www.google.fr/" target="_blank">
+                <img src="img/phpprojet.png" alt="Projet 3">
+              </a>
+            </div>
+          </div>
+         </div>
+        <!-- Ajoutez d'autres éléments avec la classe .projet au besoin -->
+    </div>
+    </div>
+    
+    
+    <div id="Apropos" class="contenant">
         
-        <div id="Présentation" class="container1 smooth-scroll">
-            <p></p>
-            <h3>Présentation</h3>
-            <p class="cenfy">Actuellement étudiant à l'Université Sorbonne Paris Nord, où je poursuis un Bachelor Universitaire de Technologie (BUT) en informatique. Je suis actuellement à la recherche <strong>d'un stage pour la fin janvier 2024, d'une durée de 8 à 10 semaines</strong>, afin de mettre en pratique <strong>les compétences</strong> que j'ai acquises jusqu'à présent et de m'initier au monde de l'entreprise en tant qu'informaticien.</p>
-            <p class="cenfy">Depuis le lycée, j'ai été attiré par le monde de la programmation. Cette attraction m'a incité à <strong>développer un ensemble de compétences</strong> tout au long de ma première année d'études en informatique. <strong>J'ai appris</strong> les langages de programmation fondamentaux tels que <strong>Python et Java</strong>. Mon aptitude à <strong>comprendre et à concevoir des algorithmes est une compétence</strong> que je souhaite perfectionner. J'ai aussi été initié à l'utilisation du <strong>langage SQL pour la création et la gestion de bases de données</strong>, ainsi que pour <strong>la manipulation des données grâce à l'utilisation de fonctions</strong>.</p>
-
-            <p class="cenfy">En ce qui concerne le développement web, <strong>je maîtrise l'HTML, le CSS et JavaScript</strong>, les langages essentiels pour <strong>créer des sites web interactifs et esthétiquement plaisants</strong>.</p>
-
-            <p class="cenfy">Parallèlement à mes compétences techniques, j'ai acquis <strong>une compréhension approfondie du fonctionnement d'Internet</strong> et des concepts fondamentaux de l'informatique, tels que <strong>la vision binaire et algorithmique</strong>. Cette solide base théorique me permet d'aborder et de comprendre des concepts informatiques complexes sereinement.</p>
-
-            <p class="cenfy">Mon parcours académique comprend également une expérience préalable au Lycée Marie Curie à Nogent-sur-Oise, où j'ai obtenu <strong>mon baccalauréat général avec mention bien</strong>, avec une spécialisation en <strong>mathématiques et en sciences informatiques</strong>. Cette période a consolidé mon intérêt pour les sciences informatiques et m'a préparé à mon parcours actuel à l'Université Sorbonne Paris Nord.</p>
-
-            <p class="cenfy">Je suis <strong>passionné par l'informatique</strong> et déterminé à continuer à développer mes compétences et mes connaissances dans ce domaine passionnant. Je suis impatient de relever de nouveaux défis et de contribuer activement à des projets informatiques stimulants. <strong>N'hésitez pas à me contacter</strong> pour discuter de toute opportunité de stage.</p>
-            <br>
-        </div>
+            <h1><span>A propos de moi</span></h1>
+            <div class="sous-contenant1">
+            <p>Actuellement étudiant à l'Université Sorbonne Paris Nord, où je poursuis un Bachelor Universitaire de Technologie (BUT) en informatique. Je suis actuellement à la recherche <span><strong>d'une alternance pour ma 3éme année 2024-2025, avec un rythme de 2 semaines en entreprise puis 2 semaines à l'université</strong></span>, afin de pouvoir mettre en pratique <span><strong>les compétences</strong></span> que j'ai acquises jusqu'à présent et de m'initier au monde de l'entreprise en tant qu'informaticien.</p>
+            <p>Depuis le lycée, j'ai été attiré par le monde de la programmation. Cette attraction m'a incité à <span><strong>développer un ensemble de compétences</strong></span> durant mon cursus du BUT. J'ai appris les langages de programmation fondamentaux tels que <span><strong>Python et Java</strong></span>. Mon aptitude à <span><strong>comprendre et à concevoir des algorithmes est une compétence</strong></span> que je souhaite perfectionner. J'ai aussi perfectionné mes compétences en base de données avec les <span><strong>langages SQL et Postgresql pour leur création et leur gestion</strong></span>.</p>
         
-        <div id="Contact"class="container1">
-            <p></p>
-            <h3>Contactez-moi</h3>
-            <p>Email : <a href="mailto:nassimmanseur1@gmail.com">nassimmanseur1@gmail.com</a></p>
-            <br>
+            <p>En ce qui concerne le développement web, <span><strong>je maîtrise l'HTML, le CSS et JavaScript ainsi que PHP</strong></span>, les langages essentiels pour <span><strong>créer des sites web interactifs et esthétiquement plaisants</strong></span>.</p>
+            <p>J'ai également appris à utiliser <span><strong>Android Studio</strong></span> pour <span><strong>le développement d'applications mobiles</strong></span>, ainsi que <span><strong>des IDE tels que Visual Studio Code</strong></span>, et à <span><strong>scréer des serveurs locaux</strong></span> avec WAMP.</p>
+            <p>Parallèlement à mes compétences techniques, j'ai acquis <span><strong>une compréhension approfondie du fonctionnement d'Internet</strong></span> et des concepts fondamentaux de l'informatique, tels que <span><strong>la vision binaire et algorithmique</strong></span>. Cette solide base théorique me permet d'aborder et de comprendre des concepts informatiques complexes sereinement.</p>
+        
+            <p>Mon parcours académique comprend également une expérience préalable au Lycée Marie Curie à Nogent-sur-Oise, où j'ai obtenu <span><strong>mon baccalauréat général avec mention bien</strong></span>, avec une spécialisation en <span><strong>mathématiques et en sciences informatiques</strong></span>. Cette période a consolidé mon intérêt pour les sciences informatiques et m'a préparé à mon parcours actuel à l'Université Sorbonne Paris Nord.</p>
+        
+            <p>Je suis <span><strong>passionné par l'informatique</strong></span> et déterminé à continuer à développer mes compétences et mes connaissances dans ce domaine passionnant. Je suis impatient de relever de nouveaux défis et de contribuer activement à des projets informatiques stimulants. <span><strong>N'hésitez pas à me contacter</strong></span> pour discuter de toute opportunité <span><strong>d'alternance.</strong></span></d></p>
+        
         </div>
-       
-        <br>
+        <!-- Contenu conservé -->
+    </div>
+
+    <div id="Contact" class="contenant">
+        <h1><span>Me contacter</span></h1>
+        <div class="sous-contenant">
+        <form action="https://formspree.io/f/xnqewayn" method="POST">
+            <div class="sous-contenant">
+            <input type="text" name="first" placeholder="Prénom" autocomplete="off" required>
+            <input type="text" name="last" placeholder="Nom" autocomplete="off" required>
+            <input type="text" name="email" placeholder="Adresse email" autocomplete="off" required>
+            <textarea name="message" placeholder="Message"cols="60" rows="5" autocomplete="off" required></textarea>
+            <button id="send"type="submit">Envoyer</button>
+        </div>
+        </form>
+        <!-- Contenu conservé -->
+    </div>
     </div>
     <footer>
         <ul>
-        <h2> Mes réseaux </h2>
-        <a href="https://www.linkedin.com/in/nassim-manseur" target="_blank"><img class="menu_re" src="img/LinkedIn_icon.png" alt="Logo linkedin"></a>
-        <a href="https://github.com/ManseurNassim" target="_blank"><img class="menu_re" src="img/github.png" alt="Logo github"></a>
+        <h2>© Nassim Manseur</h2>
+        <a href="https://www.linkedin.com/in/nassim-manseur" target="_blank"><img src="img/LinkedIn_icon.png" alt="Logo linkedin"></a>
+        <a href="https://github.com/ManseurNassim" target="_blank"><img src="img/github.png" alt="Logo github"></a>
         </ul>
-
     </footer>
-    <script src="script.js"></script>
+    
 
+    <script src="script.js"></script>
 </body>
 </html>
