@@ -7,7 +7,7 @@
     --box-shadow-hover: 0px 0px 20px rgba(255, 255, 255, 0.555), 0px 0px 20px var(--main-color);
 }
 *{
-    border: 0px solid rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
 }
 
 header{
@@ -234,6 +234,8 @@ li:hover .underline{
     align-items: center;
     text-align: center;
     flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .sous-contenant{
@@ -242,6 +244,8 @@ li:hover .underline{
     align-items: center;
     text-align: center;
     flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+     max-width: 100%;
+     max-height: 100%;
 }
 .sous-contenant1{
     display: flex;
@@ -254,10 +258,12 @@ li:hover .underline{
     margin: 1px;
     box-shadow: var(--box-shadow-hover);
     transition: var(--transition-speed);
+    max-width: 100%;
 }
 .sous-contenant1:hover{
     transition: var(--transition-speed);
     box-shadow: var(--box-shadow);
+    max-width: 100%;
 }
 
 .projet {
@@ -289,6 +295,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    max-width: 100%;
   }
   
   .element {
@@ -299,12 +306,14 @@ p{
     display: flex; /* Permet de centrer le contenu à l'intérieur de chaque élément */
     justify-content: center; /* Centre le contenu horizontalement */
     align-items: center; /* Centre le contenu verticalement */
+    max-width: 100%;
   }
   
   /* Style pour le texte à l'intérieur de chaque élément */
   .element h2 {
     font-size: 1.5rem; /* Taille de la police */
     color: white; /* Couleur du texte */
+    max-width: 100%;
   }
 
   .Projet {
@@ -538,6 +547,18 @@ footer img:hover  {
     transition: 0.3s;
     box-shadow: var(--box-shadow);
 }
+#Accueil{
+    max-width: 100%;
+    max-height: 100%;}
+
+.contenant{
+    max-width: 100%;
+    max-height: 100%;
+}
+.conteneur{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 @media only screen and (min-width:798px) and (max-width: 1100px) {
 	.Parcours{
@@ -588,10 +609,10 @@ footer img:hover  {
 }
 
 /* Media queries pour les écrans de petite taille (téléphones) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1025px) {
     /* Réduire la taille du titre si nécessaire */
-    h1 {
-        font-size: 2.5rem;
+    #titre {
+        font-size:1.5rem;
     }
 
     /* Réduire la taille de l'image de profil si nécessaire */
@@ -604,10 +625,19 @@ footer img:hover  {
     nav {
         font-size: 80%;
     }
-}
+    #Accueil{
+        max-width: 100%;}
 
+    .contenant{
+        max-width: 100%;
+    }
+
+
+
+
+}
 /* Media queries pour les écrans de très petite taille (téléphones en mode portrait) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1366px) {
     /* Réduire encore la taille du titre si nécessaire */
     h1 {
         font-size: 2rem;
