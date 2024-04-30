@@ -15,7 +15,11 @@ function changerCSS() {
 Menu.addEventListener('mouseenter', function() {
     // Modifier la largeur de la Menuzone
     Menuzone.style.transition = "width 0.5s ease"; // Ajoute une transition
+<<<<<<< HEAD
     Menuzone.style.width = "33%"; // Ajuste la largeur à 100%
+=======
+    Menuzone.style.width = "640px"; // Ajuste la largeur à 100%
+>>>>>>> 168cc5f4b0d257eed5abfcb05600debd954b862f
 });
 
 // Ajoute un gestionnaire d'événements pour le départ de la souris du bouton Menu
