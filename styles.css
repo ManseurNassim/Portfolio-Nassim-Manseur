@@ -7,7 +7,7 @@
     --box-shadow-hover: 0px 0px 20px rgba(255, 255, 255, 0.555), 0px 0px 20px var(--main-color);
 }
 *{
-    border: 1px solid rgb(255, 0, 0);
+    border: 0px solid rgb(255, 0, 0);
 }
 
 header{
