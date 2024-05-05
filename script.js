@@ -1,13 +1,12 @@
 let Menu = document.getElementById("menuimg");
-let menuElements = document.querySelectorAll('#menu li');
+let menuElements = document.querySelectorAll('.menu li');
 let fullMenu = document.querySelector("#Accueil nav");
-let Menuzone = document.getElementById("menu");
+let Menuzone = document.querySelector(".menu");
 
 
 // Ajoute un gestionnaire d'événements pour le survol de la souris sur le bouton Menu
 Menu.addEventListener('mouseenter', function() {
     // Modifier la largeur de la Menuzone
-    Menuzone.style.transition = "width 0.5s ease"; // Ajoute une transition
     Menuzone.classList.add('expanded');// Ajuste la largeur à 100%
 
 });
@@ -15,7 +14,6 @@ Menu.addEventListener('mouseenter', function() {
 // Ajoute un gestionnaire d'événements pour le départ de la souris du bouton Menu
 Menuzone.addEventListener('mouseleave', function() {
     // Réinitialise la largeur de la Menuzone
-    Menuzone.style.transition = "width 0.5s ease"; // Ajoute une transition
     Menuzone.classList.remove('expanded'); // Ajuste la largeur à sa valeur originale
 });
 
