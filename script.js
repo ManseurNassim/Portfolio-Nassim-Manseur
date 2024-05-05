@@ -2,20 +2,13 @@ let Menu = document.getElementById("menuimg");
 let menuElements = document.querySelectorAll('#menu li');
 let fullMenu = document.querySelector("#Accueil nav");
 let Menuzone = document.getElementById("menu");
-function changerCSS() {
-    var cssLink = document.getElementById("css-link");
-    if (cssLink.href.includes("styles.css")) {
-        cssLink.href = "styles1.css";
-    } else {
-        cssLink.href = "styles.css";
-    }
-}
+
 
 // Ajoute un gestionnaire d'événements pour le survol de la souris sur le bouton Menu
 Menu.addEventListener('mouseenter', function() {
     // Modifier la largeur de la Menuzone
     Menuzone.style.transition = "width 0.5s ease"; // Ajoute une transition
-    Menuzone.style.width = "33%"; // Ajuste la largeur à 100%
+    Menuzone.classList.add('expanded');// Ajuste la largeur à 100%
 
 });
 
@@ -23,7 +16,7 @@ Menu.addEventListener('mouseenter', function() {
 Menuzone.addEventListener('mouseleave', function() {
     // Réinitialise la largeur de la Menuzone
     Menuzone.style.transition = "width 0.5s ease"; // Ajoute une transition
-    Menuzone.style.width = "8%"; // Ajuste la largeur à sa valeur originale
+    Menuzone.classList.remove('expanded'); // Ajuste la largeur à sa valeur originale
 });
 
 // Parcourir tous les éléments de la liste, sauf le dernier
