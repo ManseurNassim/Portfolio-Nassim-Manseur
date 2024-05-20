@@ -11,7 +11,7 @@
 }
 
 header{
-    box-shadow: 0px 0px 25px 0px var(--main-color); /* Ombre en bas seulement */
+
     transition: 0.1s;
     background-image: url("img/day_background.jpg");
     background-size: cover;
@@ -88,7 +88,7 @@ nav {
     font-size: 100%;
     text-align: center;
     justify-content: space-around;
-    box-shadow: var(--box-shadow);
+
 }
 
 nav ul {
@@ -376,15 +376,15 @@ input:focus, textarea:focus {
 }
 
 #send{
-    transition: 0.2s;
+    color: var(--secondary-color);
     background-color:var(--main-color);
-    color: white;
-    border-radius: 17px;
-    font-size: 22px;
-    padding: 10px 18px;
-    text-align: center;
-    display: flex;
-    box-shadow: 0px 0px 5px 1px var(--secondary-color);;
+    padding: 12px 20px; /* Espacement intérieur */
+    font-size: 1.2rem; /* Taille de la police */
+    border-radius: 10px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur au survol */
+    transition: background-color 0.3s ease; /* Transition fluide */
+    box-shadow: var(--box-shadow-hover); /* Ombre au survol */
+    transition: 0.5s;
 }
 
 #send:hover{
