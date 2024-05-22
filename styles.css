@@ -231,15 +231,7 @@ li:hover .underline{
     height: 100vh; /* Prendre la hauteur de l'écran */
     width: 100vh; /* Prendre toute la largeur de l'écran */
 }
-#Projets {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
-    max-width: 100%;
-    max-height: 100%;
-}
+
 
 .sous-contenant{
     display: flex;
@@ -269,25 +261,41 @@ li:hover .underline{
     max-width: 100%;
 }
 
-.projet {
-    flex: 1 1 calc(30% - 15px); /* Taille flexible pour s'adapter à la largeur */
-    margin: 10px;
-    padding: 20px;
+.Projet {
+    margin: 15px;
+    padding: 15px;
     box-sizing: border-box; /* Inclure la bordure dans la largeur */
     overflow: hidden; /* Cacher le contenu débordant */
-}
-
-.projet h2 {
+    background-color: var(--bg-color); /* Couleur de fond */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: var(--box-shadow-hover); /* Ombre au survol */
+    transition: var(--transition-speed); /* Transition fluide */
+     /* Cacher le contenu débordant */
+    
+  }
+  
+  .Projet:hover {
+    box-shadow: var(--box-shadow); /* Ombre plus prononcée au survol */
+    transform: translateY(-5px); /* Légère translation vers le haut */
+  }
+  
+  .Projet h2 {
     white-space: nowrap; /* Empêcher le retour à la ligne du texte */
     overflow: hidden;
-    text-overflow: ellipsis; /* Ajouter des points de suspension */
-}
+    text-overflow: ellipsis; /* Ajouter des points de suspension en cas de débordement */
+    font-family: "Space Grotesk", sans-serif; /* Police de caractères */
+    font-size: 1.5rem; /* Taille de la police */
+    color: var(--secondary-color); /* Couleur du texte */
+  }
+  
+  .Projet img {
+    padding: 40px;
+    width: 170px;
+    height: 150px; /* Image adaptative */
+    border-radius: 8px; /* Coins arrondis */
+  }
 
-.projet p {
-    white-space: nowrap; /* Empêcher le retour à la ligne du texte */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Ajouter des points de suspension */
-}
+
 p{
     font-family: "Space Grotesk", sans-serif; 
 	text-align: justify;
@@ -319,39 +327,7 @@ p{
     max-width: 100%;
   }
 
-  .Projet {
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box; /* Inclure la bordure dans la largeur */
-    overflow: hidden; /* Cacher le contenu débordant */
-    background-color: var(--bg-color); /* Couleur de fond */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: var(--box-shadow-hover); /* Ombre au survol */
-    transition: var(--transition-speed); /* Transition fluide */
-    justify-content: space-around;
-    
-  }
-  
-  .Projet:hover {
-    box-shadow: var(--box-shadow); /* Ombre plus prononcée au survol */
-    transform: translateY(-5px); /* Légère translation vers le haut */
-  }
-  
-  .Projet h2 {
-    white-space: nowrap; /* Empêcher le retour à la ligne du texte */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Ajouter des points de suspension en cas de débordement */
-    font-family: "Space Grotesk", sans-serif; /* Police de caractères */
-    font-size: 1.5rem; /* Taille de la police */
-    color: var(--secondary-color); /* Couleur du texte */
-  }
-  
-  .Projet img {
-    padding: 40px;
-    width: 170px;
-    height: 150px; /* Image adaptative */
-    border-radius: 8px; /* Coins arrondis */
-  }
+
 
 /* FIN CONTENT PRINCIPALE */
 
@@ -393,11 +369,7 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
-.card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-}
+
 
 
 
@@ -555,6 +527,7 @@ footer img:hover  {
     max-height: 100%;}
 
 .contenant{
+    margin-top: 15%;
     max-width: 100%;
     max-height: 100%;
 }
@@ -563,46 +536,14 @@ footer img:hover  {
     max-height: 100%;
 }
 
-@media only screen and (min-width:798px) and (max-width: 1100px) {
-	.Parcours{
-		width: 80%;
-	}
-}
-
-@media only screen and (max-width: 798px) {
-	.Parcours{
-		width: 70%;
-		transform: translateX(20px);
-	}
-	.Parcours ul::after{
-		left: -40px;
-	}
-	.Parcours ul li {
-		width: 100%;
-		float: none;
-		clear: none;
-		margin-bottom: 80px;
-	}
-	.Parcours ul li .circle{
-		left: -40px;
-		transform: translate(-50%, -50%);
-	}
-	.Parcours ul li .date{
-		left: 20px;
-	}
-	.Parcours ul li:nth-child(odd) {
-		transform: translateX(0px);
-		text-align: left;
-	}
-	.Parcours ul li:nth-child(even) {
-		transform: translateX(0px);
-	}
-}
 
 
 /* Media queries pour les écrans de petite taille (téléphones) */
 @media only screen and (max-width: 1000px) {
     /* Réduire la taille du titre si nécessaire */
+    header{
+        margin-bottom: 40%;
+    }
     #Accueil {
         z-index: 999;
     }
@@ -611,9 +552,18 @@ footer img:hover  {
         font-weight: 400;
         font-size: 2.5rem;
         line-height: 1.3;
-        padding: 3%;
+        padding: 4%;
+        margin-bottom: 50px;
     
     }
+    .Projet h2 {
+        height:50px ;
+        width: 100px;
+        white-space: wrap; /* Empêcher le retour à la ligne du texte */
+        font-family: "Space Grotesk", sans-serif; /* Police de caractères */
+        font-size: 1rem; /* Taille de la police */
+        color: var(--secondary-color); /* Couleur du texte */
+      }
     #titre{
         padding: 0;
     }
@@ -691,7 +641,7 @@ footer img:hover  {
     .menu button {
         margin-right: 50%;
         font-weight: 400;
-        font-size: 95%;
+        font-size: 85%;
         color: var(--secondary-color);
         border: var(--main-color) 0px solid;
     }
@@ -704,11 +654,41 @@ footer img:hover  {
     div{ 
 
     }
+    .Projet {
+        display: flex;
+        flex-direction: column;
 
+
+
+    }
+    .Projet img{
+        max-width: 100px;
+        max-height: 100px;
+        padding: 0%;
+        margin: 0%;
+    }
+    #Projets,#Apropos{
+        margin-bottom: 80%;
+    }
+    .conteneur {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: auto;
+        margin: auto;
+
+      }
+
+      .contenant{
+        max-width: 100%;
+        max-height: 100%;
+    }
 
 	.Parcours{
 		width: 70%;
 		transform: translateX(20px);
+        margin-bottom: 50%;
 	}
 	.Parcours ul::after{
 		left: -40px;
@@ -737,4 +717,24 @@ footer img:hover  {
 	}
     
     /* FIN MENU ACCUEIL */
+}
+@media only screen and (min-height: 1000px) {
+    .menu {
+        border-radius: 20px;
+        top: 0;
+        right:0;
+        height: 47px;
+        width: 10%;
+        margin: 1%;
+    }
+    .expanded{
+        width: 76%;
+    }
+    .menu button {
+        margin-right: 50%;
+        font-weight: 400;
+        font-size: 150%;
+        color: var(--secondary-color);
+        border: var(--main-color) 0px solid;
+    }
 }
